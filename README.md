@@ -17,9 +17,27 @@ LibraryManagement is a Java-based program designed to manage a library's collect
 * Implement real book cover images for a visual experience
 * Explore image storage and management techniques as a learning opportunity in order to implement the book covers
 
+| TestID  | Description | Source File  | Test Status |
+| ------------- | ------------- | ------------- | ------------- |
+| 1  | TBT  | TBT  | TBT  |
+| 2  | TBT  | TBT  | TBT  |
+| 3  | TBT  | TBT  | TBT  |
+| 4  | TBT  | TBT  | TBT  |
+| 5  | TBT  | TBT  | TBT  |
+
 ## Project Timeline
 ### Week 1
 * Create project proposal.
-* Settle and define the classes. As well as define the methods and fields of said classes.
+* Settle and define the classes. As well as define the methods and fields of said classes
 * Create the UML
-* Update repository page.
+* Update repository page
+### Week 2
+* Start working on the main classes like Book and BookBrowser
+* Finish adding everything that needs to put into each class, the basics if you will
+* Add some Unit tests
+### Week 3
+* Start working on the search function and hopefully get it to somewhat work
+* Add a checked out and check out function
+### Week 4
+* Finished up the search function and works at least a little bit
+* Added more fields to the Book class
