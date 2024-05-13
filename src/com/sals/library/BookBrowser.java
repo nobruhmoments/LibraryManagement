@@ -17,7 +17,28 @@ public class BookBrowser
 	{
 		catalog.add(book);
 		System.out.println("Book has been added: " + book.getTitle());
+		
 	}
+	
+    // Method to update an existing book in the catalog
+    public void updateBook(Book updatedBook) {
+        for (int i = 0; i < catalog.size(); i++) {
+            Book book = catalog.get(i);
+            if (book.getTitle().equals(updatedBook.getTitle())) {
+                // Update book details
+                book.setAuthor(updatedBook.getAuthor());
+                book.setDescription(updatedBook.getDescription());
+                book.setAvailable(updatedBook.isAvailable());
+                // Optionally update other fields as needed
+                break; // Stop searching once the book is found and updated
+            }
+        }
+    }
+
+    // Method to retrieve the entire catalog
+    public List<Book> getCatalog1() {
+        return catalog;
+    }
 	
 	public void displayCatalog()
 	{
@@ -30,6 +51,7 @@ public class BookBrowser
 		}
 	}
 	
+	
 	public List<Book> searchBooks(String keyword)
 	{
 		List<Book> results = new ArrayList<>();
@@ -41,5 +63,11 @@ public class BookBrowser
 	{
 		return catalog.size();
 	}
+
+    public Book[] getCatalog() {
+        // Convert the list of books to an array
+        Book[] booksArray = new Book[catalog.size()];
+        return catalog.toArray(booksArray);
+    }
 
 }
